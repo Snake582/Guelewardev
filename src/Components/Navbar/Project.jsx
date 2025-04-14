@@ -2,6 +2,9 @@ import React from 'react';
 import projet1 from '../../asset/projet1.jpg';
 import projet2 from '../../asset/projet2.jpg';
 import projet3 from '../../asset/projet3.jpg';
+import projet4 from '../../asset/projet4.jpg';
+import projet5 from '../../asset/projet5.jpg';
+import projet6 from '../../asset/projet6.jpg';
 
 const Project = () => {
   return (
@@ -42,21 +45,36 @@ const Project = () => {
 >Open</a>
         </div>
         <div className="w-full h-60 shadow-2xl flex flex-col items-center justify-center">
-        <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>01</div>
-          <button className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300">
-            OPOP</button>
+        <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>
+        <img src={projet4} alt="picture" className='w-full h-full object-cover rounded-xl' />
+        </div>
+        <a href="https://snake582.github.io/Ndougou-ecommerce/ "
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300 inline-block text-center"
+>Open</a>
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-2 sm:px-4 md:px-6 lg:px-8 py-10">
         <div className="w-full h-60 shadow-2xl flex flex-col items-center justify-center">
-        <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>01</div>
-          <button className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300">
-            OPOP</button>
+        <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>
+        <img src={projet5} alt="picture" className='w-full h-full object-cover rounded-xl' />
+        </div>
+        <a href="https://touki-travel.vercel.app/ "
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300 inline-block text-center"
+>Open</a>
         </div>
         <div className="w-full h-60 shadow-2xl flex flex-col items-center justify-center">
-        <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>01</div>
-          <button className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300">
-            OPOP</button>
+        <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>
+        <img src={projet6} alt="picture" className='w-full h-full object-cover rounded-xl' />
+        </div>
+        <a href="https://ice-cream-vert-phi.vercel.app/ "
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300 inline-block text-center"
+>Open</a>
         </div>
         <div className="w-full h-60 shadow-2xl flex flex-col items-center justify-center">
         <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>01</div>
