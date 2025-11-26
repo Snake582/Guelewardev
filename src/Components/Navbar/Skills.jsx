@@ -58,12 +58,12 @@ const Skills = () => {
         <SkillItem
           title="React Native"
           icon={<TbBrandReactNative className='text-blue-500' />}
-          percentage={50}
+          percentage={70}
         />
         <SkillItem
           title="NextJS"
           icon={<TbBrandNextjs className='text-black' />}
-          percentage={40}
+          percentage={85}
         />
         <SkillItem
           title="Tailwind CSS"
@@ -78,16 +78,16 @@ const Skills = () => {
       <div className="flex flex-wrap justify-center items-center gap-8 mt-6">
         <SkillItem
           title="NestJS"
-          percentage={30}
+          percentage={86}
         />
         <SkillItem
           title="MySQL"
           icon={<DiMysql className='text-blue-500' />}
-          percentage={40}
+          percentage={80}
         />
         <SkillItem
           title="ExpressJS"
-          percentage={20}
+          percentage={80}
         />
       </div>
     </div>

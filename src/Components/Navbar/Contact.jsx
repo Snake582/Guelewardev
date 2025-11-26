@@ -1,8 +1,18 @@
 import React from 'react';
 import { GiPositionMarker } from 'react-icons/gi';
 import { IoIosMail } from 'react-icons/io';
+import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
+    const [state, handleSubmit] = useForm("xldlbawd") // Remplace par ton ID Formspree
+
+  if (state.succeeded) {
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-white to-blue-200">
+        <p className="text-green-600 font-semibold text-lg">✅ Merci pour votre message !</p>
+      </div>
+    )
+  }
   return (
     <div className='min-h-screen bg-slate-100 flex flex-col p-10'>
       <div className='flex justify-start mb-8'>
@@ -23,7 +33,7 @@ const Contact = () => {
         </div>
 
         <div className='w-full lg:w-1/2 bg-white rounded-xl shadow-lg p-6'>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className='mb-4'>
               <label htmlFor='name' className='block text-sm font-medium text-gray-700'>
                 Name
@@ -48,6 +58,7 @@ const Contact = () => {
                 className='w-full py-2 mt-2 px-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500'
                 placeholder='Enter your email'
               />
+              <ValidationError prefix="Email" field="email" errors={state.errors} />
             </div>
 
             <div className='mb-4'>
@@ -61,13 +72,15 @@ const Contact = () => {
                 placeholder='Enter your message'
                 rows='4'
               ></textarea>
+              <ValidationError prefix="Message" field="message" errors={state.errors} />
             </div>
 
             <button
               type='submit'
+              disabled={state.submitting}
               className='w-full py-2 mt-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500'
             >
-              Send Message
+              {state.submitting ? 'Sending...' : 'Send Message'}
             </button>
           </form>
         </div>

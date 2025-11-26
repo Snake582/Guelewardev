@@ -76,7 +76,7 @@ const Project = () => {
   className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300 inline-block text-center"
 >Open</a>
         </div>
-        <div className="w-full h-60 shadow-2xl flex flex-col items-center justify-center">
+       {/*  <div className="w-full h-60 shadow-2xl flex flex-col items-center justify-center">
         <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>01</div>
           <button className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300">
             OPOP</button>
@@ -85,7 +85,7 @@ const Project = () => {
         <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>01</div>
           <button className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300">
             OPOP</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

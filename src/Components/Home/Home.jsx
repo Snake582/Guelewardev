@@ -29,26 +29,26 @@ const Home = () => {
   target="_blank"
   rel="noopener noreferrer"
   >
-  <FaSquareWhatsapp className="text-green-500 text-3xl hover:scale-110 transition-transform duration-300 shadow-md shadow-green-800" /></a>
+  <FaSquareWhatsapp className="text-green-500 text-2xl hover:scale-110 transition-transform duration-300 shadow-md shadow-green-800" /></a>
 <a href="https://www.linkedin.com/in/mamadou-diagne-a7b86227b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app "
   target="_blank"
   rel="noopener noreferrer"
-  ><FaLinkedin className="text-blue-500 text-3xl hover:scale-110 transition-transform duration-300 shadow-md shadow-blue-800" /> </a>
+  ><FaLinkedin className="text-blue-500 text-2xl hover:scale-110 transition-transform duration-300 shadow-md shadow-blue-800" /> </a>
           <a href="https://github.com/Snake582"
   target="_blank"
   rel="noopener noreferrer"
-  ><FaGithub className="text-black text-3xl hover:scale-110 transition-transform duration-300 shadow-md shadow-black" /></a>
+  ><FaGithub className="text-black text-2xl hover:scale-110 transition-transform duration-300 shadow-md shadow-black" /></a>
           <a href="https://x.com/mkd_snake?s=21"
   target="_blank"
   rel="noopener noreferrer"
-  ><FaTwitter className="text-blue-500 text-3xl hover:scale-110 transition-transform duration-300 shadow-md shadow-blue-800" /></a>
+  ><FaTwitter className="text-blue-500 text-2xl hover:scale-110 transition-transform duration-300 shadow-md shadow-blue-800" /></a>
          <a href="https://www.instagram.com/guelewar_"
   target="_blank"
   rel="noopener noreferrer"
-  ><FaInstagram className="text-red-500 text-3xl hover:scale-110 transition-transform duration-300 shadow-md shadow-red-800" /></a>
+  ><FaInstagram className="text-red-500 text-2xl hover:scale-110 transition-transform duration-300 shadow-md shadow-red-800" /></a>
         </div>
 
-        <button className="rounded-lg text-xl font-semibold text-white py-3 bg-blue-500 px-8 mt-6 hover:bg-blue-700 transition-colors duration-300">
+        <button className="rounded-lg text-xl font-semibold text-white py-2 bg-blue-500 px-6 mt-6 hover:bg-blue-700 transition-colors duration-300">
           <Link to="/contact">Contact</Link>
         </button>
       </div>
