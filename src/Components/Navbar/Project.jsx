@@ -5,87 +5,109 @@ import projet3 from '../../asset/projet3.jpg';
 import projet4 from '../../asset/projet4.jpg';
 import projet5 from '../../asset/projet5.jpg';
 import projet6 from '../../asset/projet6.jpg';
+import projet7 from '../../asset/projet7.png';
+import projet8 from '../../asset/projet8.png';
+
+const projects = [
+  {
+    title: "Landing Page Moderne",
+    description: "Site vitrine responsive développé en HTML/CSS.",
+    image: projet1,
+    link: "https://snake582.github.io/projet1/"
+  },
+  {
+    title: "Portfolio Personnel",
+    description: "Portfolio professionnel développé avec React.",
+    image: projet2,
+    link: "https://snake582.github.io/"
+  },
+  {
+    title: "Maison Déco",
+    description: "Site e-commerce design et responsive.",
+    image: projet3,
+    link: "https://snake582.github.io/Maisondeco/"
+  },
+  {
+    title: "Ndougou E-commerce",
+    description: "Plateforme e-commerce complète.",
+    image: projet4,
+    link: "https://snake582.github.io/Ndougou-ecommerce/"
+  },
+  {
+    title: "Touki Travel",
+    description: "Application moderne de réservation de voyages.",
+    image: projet5,
+    link: "https://touki-travel.vercel.app/"
+  },
+  {
+    title: "Ice Cream Shop",
+    description: "Application moderne développée avec Next.js.",
+    image: projet6,
+    link: "https://ice-cream-vert-phi.vercel.app/"
+  },
+  {
+    title: "Cabinet IDAC SARL",
+    description: "Site institutionnel professionnel.",
+    image: projet7,
+    link: "https://cabinet-idac-sarl.vercel.app/"
+  },
+  {
+    title: "WATI SARL",
+    description: "Site vitrine d’entreprise orienté business.",
+    image: projet8,
+    link: "https://www.watisarl.com/"
+  }
+];
 
 const Project = () => {
   return (
-    <div className="min-h-screen bg-slate-100 flex flex-col p-10">
-      <div className="flex justify-start mb-8">
-        <h1 className="font-extrabold text-3xl text-gray-800">PROJECTS</h1>
+    <div className="min-h-screen bg-slate-100 p-10">
+      
+      <div className="mb-10">
+        <h1 className="font-extrabold text-4xl text-gray-800">
+          Projets Réalisés / Featured Projects
+        </h1>
+        <p className="text-gray-600 mt-2">
+          Voici une sélection de projets développés en frontend et fullstack.
+          <br />
+          Here is a selection of frontend and fullstack projects I have built.
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-2 sm:px-4 md:px-6 lg:px-8 py-10">
-        <div className="w-full h-60 shadow-2xl flex flex-col items-center justify-center">
-          <div className='w-full h-40 mb-2 rounded-xl'>
-            <img src={projet1} alt="picture" className='w-full h-full object-cover rounded-xl' />
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        
+        {projects.map((project, index) => (
+          <div 
+            key={index}
+            className="bg-white rounded-xl shadow-xl overflow-hidden hover:scale-105 transition duration-300"
+          >
+            <img 
+              src={project.image} 
+              alt={project.title} 
+              className="w-full h-40 object-cover"
+            />
+
+            <div className="p-4">
+              <h3 className="font-bold text-lg text-gray-800">
+                {project.title}
+              </h3>
+
+              <p className="text-sm text-gray-600 mt-2">
+                {project.description}
+              </p>
+
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block w-full text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+              >
+                Voir le projet / Live Demo
+              </a>
+            </div>
           </div>
-          <a href="https://snake582.github.io/projet1/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300 inline-block text-center"
->Open</a>
-        </div>
-        <div className="w-full h-60 shadow-2xl flex flex-col items-center justify-center">
-          <div className='w-full h-40 mb-2 rounded-xl'>
-            <img src={projet2} alt="picture" className='w-full h-full object-cover rounded-xl' />
-          </div>
-          <a href="https://snake582.github.io/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300 inline-block text-center"
->Open</a>
-        </div>
-        <div className="w-full h-60 shadow-2xl flex flex-col items-center justify-center">
-          <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>
-          <img src={projet3} alt="picture" className='w-full h-full object-cover rounded-xl' />
-          </div>
-          <a href="https://snake582.github.io/Maisondeco/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300 inline-block text-center"
->Open</a>
-        </div>
-        <div className="w-full h-60 shadow-2xl flex flex-col items-center justify-center">
-        <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>
-        <img src={projet4} alt="picture" className='w-full h-full object-cover rounded-xl' />
-        </div>
-        <a href="https://snake582.github.io/Ndougou-ecommerce/ "
-  target="_blank"
-  rel="noopener noreferrer"
-  className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300 inline-block text-center"
->Open</a>
-        </div>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-2 sm:px-4 md:px-6 lg:px-8 py-10">
-        <div className="w-full h-60 shadow-2xl flex flex-col items-center justify-center">
-        <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>
-        <img src={projet5} alt="picture" className='w-full h-full object-cover rounded-xl' />
-        </div>
-        <a href="https://touki-travel.vercel.app/ "
-  target="_blank"
-  rel="noopener noreferrer"
-  className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300 inline-block text-center"
->Open</a>
-        </div>
-        <div className="w-full h-60 shadow-2xl flex flex-col items-center justify-center">
-        <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>
-        <img src={projet6} alt="picture" className='w-full h-full object-cover rounded-xl' />
-        </div>
-        <a href="https://ice-cream-vert-phi.vercel.app/ "
-  target="_blank"
-  rel="noopener noreferrer"
-  className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300 inline-block text-center"
->Open</a>
-        </div>
-       {/*  <div className="w-full h-60 shadow-2xl flex flex-col items-center justify-center">
-        <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>01</div>
-          <button className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300">
-            OPOP</button>
-        </div>
-        <div className="w-full h-60 shadow-2xl flex flex-col items-center justify-center">
-        <div className='w-full h-40 bg-slate-400 mb-2 m-2 rounded-xl'>01</div>
-          <button className="rounded-lg text-xl font-semibold mb-2 text-white py-2 bg-blue-500 px-4 mt-6 hover:bg-blue-700 transition-colors duration-300">
-            OPOP</button>
-        </div> */}
+        ))}
+
       </div>
     </div>
   );
