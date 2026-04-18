@@ -7,6 +7,7 @@ import projet5 from '../../asset/projet5.jpg';
 import projet6 from '../../asset/projet6.jpg';
 import projet7 from '../../asset/projet7.png';
 import projet8 from '../../asset/projet8.png';
+import projet9 from '../../asset/projet9.png';
 
 const projects = [
   {
@@ -56,7 +57,13 @@ const projects = [
     description: "Site vitrine d’entreprise orienté business.",
     image: projet8,
     link: "https://www.watisarl.com/"
-  }
+  },
+  {
+    title: "coffee shop",
+    description: "Application de gestion de commandes pour un coffee shop.",
+    image: projet9,
+    link: "https://cofeeshop-gold.vercel.app/"
+  },
 ];
 
 const Project = () => {
