@@ -1,26 +1,25 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
 import Navbar from './Components/Navbar/Navbar';
-
 import Home from './Components/Home/Home';
-import About from './Components/Navbar/About';
 import Skills from './Components/Navbar/Skills';
-import Contact from './Components/Navbar/Contact';
 import Project from './Components/Navbar/Project';
-
+import Experience from './Components/Experience/Experience';
+import Contact from './Components/Navbar/Contact';
+import Footer from './Components/Footer/Footer';
 
 const App = () => {
+  const [language, setLanguage] = useState('FR');
+
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Project />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+    <div className="bg-ink-900">
+      <Navbar language={language} setLanguage={setLanguage} />
+      <Home language={language} />
+      <Skills language={language} />
+      <Project language={language} />
+      <Experience language={language} />
+      <Contact language={language} />
+      <Footer language={language} />
+    </div>
   );
 };
 
