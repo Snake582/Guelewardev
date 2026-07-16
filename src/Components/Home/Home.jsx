@@ -2,7 +2,7 @@ import React from "react";
 import maphoto from "../../asset/maphoto.png";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
-import cvFile from "../../asset/CV_Guelewar.pdf";
+import cvFile from "../../asset/Guelewarcv.pdf";
 import Reveal from "../Reveal/Reveal";
 
 const content = {
