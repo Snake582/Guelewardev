@@ -11,7 +11,7 @@ const content = {
       {
         role: "Stage Développeur Web",
         place: "Cabinet IDAC SARL",
-        date: "2025 · 2 mois",
+        date: "2026 · 2 mois",
         description:
           "Conception et développement de deux sites web durant le stage : le site institutionnel du Cabinet IDAC SARL et le site vitrine de WATI SARL, de la maquette à la mise en production.",
       },
@@ -31,7 +31,7 @@ const content = {
       {
         role: "Web Developer Intern",
         place: "Cabinet IDAC SARL",
-        date: "2025 · 2 months",
+        date: "2026 · 2 months",
         description:
           "Designed and built two websites during the internship: the corporate site for Cabinet IDAC SARL and the showcase site for WATI SARL, from mockup to production deployment.",
       },
