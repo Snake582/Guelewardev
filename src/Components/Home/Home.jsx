@@ -88,7 +88,7 @@ const Home = ({ language }) => {
             </a>
             <a
               href={cvFile}
-              download="Guelewarcv (1).pdf"
+              download="Guelewarcv.pdf"
               className="px-7 py-3 border border-ink-500 text-gray-200 font-semibold rounded-xl hover:border-accent hover:text-accent transition duration-300 text-center"
             >
               {t.download}
